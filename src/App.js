@@ -1,10 +1,13 @@
 import { hot } from 'react-hot-loader';
+import { useTranslation } from 'react-i18next';
 import logo from './logo.svg';
 import './App.scss';
 
 
 
 const App = () => {
+  const { i18n, t } = useTranslation();
+
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +23,7 @@ const App = () => {
         >
           Learn React
         </a>
+        <p>{t('Language')}: {i18n.language}</p>
       </header>
     </div>
   );
