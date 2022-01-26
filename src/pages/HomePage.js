@@ -1,11 +1,11 @@
 import { hot } from 'react-hot-loader';
 import { useTranslation } from 'react-i18next';
-import logo from './logo.svg';
-import './App.scss';
+import logo from '../logo.svg';
+import './HomePage.scss';
 
 
 
-const App = () => {
+const HomePage = () => {
   const { i18n, t } = useTranslation();
 
   return (
@@ -29,4 +29,4 @@ const App = () => {
   );
 }
 
-export default hot(module)(App);
+export default hot(module)(HomePage);
