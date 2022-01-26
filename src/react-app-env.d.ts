@@ -4,3 +4,7 @@
 
 interface Window {
 }
+
+interface NodeModule {
+  hot?: any | undefined;
+}

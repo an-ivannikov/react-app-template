@@ -1,7 +1,10 @@
+import { hot } from 'react-hot-loader';
 import logo from './logo.svg';
 import './App.scss';
 
-function App() {
+
+
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -22,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default hot(module)(App);
